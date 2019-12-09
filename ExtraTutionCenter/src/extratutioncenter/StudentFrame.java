@@ -113,18 +113,18 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        viewProfilebtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        BookLessonsbtn = new javax.swing.JButton();
+        viewBookingsbtn = new javax.swing.JButton();
+        ModifySlotbtn = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
         jLabel2 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        OrderBooksbtn = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -140,34 +140,34 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
         setResizable(false);
         setSize(new java.awt.Dimension(1100, 600));
 
-        jButton1.setText("View Profile");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        viewProfilebtn.setText("View Profile");
+        viewProfilebtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                viewProfilebtnActionPerformed(evt);
             }
         });
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("Student Portal");
 
-        jButton2.setText("Book Lessons");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BookLessonsbtn.setText("Book Lessons");
+        BookLessonsbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BookLessonsbtnActionPerformed(evt);
             }
         });
 
-        jButton3.setText("View Bookings");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        viewBookingsbtn.setText("View Bookings");
+        viewBookingsbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                viewBookingsbtnActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Modify Slot");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        ModifySlotbtn.setText("Modify Slot");
+        ModifySlotbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                ModifySlotbtnActionPerformed(evt);
             }
         });
 
@@ -206,10 +206,10 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
             }
         });
 
-        jButton7.setText("Order Books");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        OrderBooksbtn.setText("Order Books");
+        OrderBooksbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                OrderBooksbtnActionPerformed(evt);
             }
         });
 
@@ -279,11 +279,11 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(viewBookingsbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(viewProfilebtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BookLessonsbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ModifySlotbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(OrderBooksbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(353, 353, 353)
@@ -331,7 +331,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                 .addGap(36, 36, 36)
                 .addComponent(jLabel1)
                 .addGap(57, 57, 57)
-                .addComponent(jButton1)
+                .addComponent(viewProfilebtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -340,23 +340,21 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                             .addComponent(jButton6))
                         .addGap(127, 127, 127)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(89, 89, 89))
+                            .addComponent(jLabel2)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(54, 54, 54)
-                                .addComponent(jLabel4)
-                                .addContainerGap(70, Short.MAX_VALUE))))
+                                .addComponent(jLabel4)))
+                        .addContainerGap(70, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton2)
+                            .addComponent(BookLessonsbtn)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5)
                             .addComponent(jLabel6))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton3))
+                                .addComponent(viewBookingsbtn))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -365,13 +363,13 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                             .addComponent(jButton8)
                             .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jButton4)
+                                .addComponent(ModifySlotbtn)
                                 .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(37, 37, 37)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton7)
+                            .addComponent(OrderBooksbtn)
                             .addComponent(jButton5))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
@@ -444,7 +442,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
         System.out.println("Booking with "+tutor1+" for  "+subject1+" is Booked at "+timeslot+" Successfully");
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BookLessonsbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BookLessonsbtnActionPerformed
         // TODO add your handling code here:
         jComboBox1.setVisible(true);
         jLabel5.setVisible(true);
@@ -460,7 +458,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
             defaultListModel.addElement("English Writing");
             defaultListModel.addElement("Maths");
             jList1.setModel(defaultListModel);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_BookLessonsbtnActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
@@ -524,7 +522,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
         
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void viewProfilebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewProfilebtnActionPerformed
         // TODO add your handling code here:
         jList1.setVisible(false);
         jComboBox1.setVisible(false);
@@ -555,7 +553,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
         jFrame.setSize(300,300);
         jFrame.show();
        
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_viewProfilebtnActionPerformed
 
     private void jList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList1ValueChanged
         // TODO add your handling code here:
@@ -600,14 +598,14 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
         }        
     }//GEN-LAST:event_jList1ValueChanged
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void OrderBooksbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrderBooksbtnActionPerformed
         // TODO add your handling code here:
         System.out.print(username);
         CGPBookStore BS= new CGPBookStore(username);
         BS.setVisible(true);
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_OrderBooksbtnActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void viewBookingsbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewBookingsbtnActionPerformed
         // TODO add your handling code here:
         
         String user=getUsername();
@@ -626,9 +624,9 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                 model1.addRow(rowData);
             }
         }                  
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_viewBookingsbtnActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void ModifySlotbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ModifySlotbtnActionPerformed
         // TODO add your handling code here:
         jTable1.setVisible(false);      
         jLabel6.setVisible(false);
@@ -648,7 +646,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                 
             }
         }
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_ModifySlotbtnActionPerformed
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         // TODO add your handling code here:
@@ -757,13 +755,11 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton BookLessonsbtn;
+    private javax.swing.JButton ModifySlotbtn;
+    private javax.swing.JButton OrderBooksbtn;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
@@ -778,5 +774,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
+    private javax.swing.JButton viewBookingsbtn;
+    private javax.swing.JButton viewProfilebtn;
     // End of variables declaration//GEN-END:variables
 }
