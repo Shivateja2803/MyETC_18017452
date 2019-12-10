@@ -5,12 +5,16 @@
  */
 package extratutioncenter;
 
+import java.awt.Color;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.JTable;
+import javax.swing.JTextArea;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
@@ -366,16 +370,30 @@ public class TutorFrame extends javax.swing.JFrame {
         Submitbtn.setVisible(false);
         jTable1.setVisible(false);
         jComboBox2.setVisible(false);
+        String content="";
         for(Map.Entry<String,Object> entry : allUserDetails.entrySet()){
             UserData obj = (UserData)entry.getValue();
             if(obj.getBooking() != null){
                 for(Booking b : obj.getBooking()){
                     if(b.getStatus().equals("Booked")){
                         System.out.println(obj.getName()+"-"+b.getTutor()+"-"+b.getSubject()+"-"+b.getStatus());
+                        content=content+"\n"+obj.getName()+"-"+b.getTutor()+"-"+b.getSubject()+"-"+b.getStatus();
                     }
                  }
             }
         }
+        JFrame jFrame = new JFrame("View Bookings");
+        JTextArea printreport= new JTextArea();
+        printreport.setEditable(false);
+        printreport.setText("List of Lessons Booked by Students \n"+content);
+        JPanel jPanel = new JPanel();
+        jPanel.add(printreport);
+        jPanel.setBackground(Color.CYAN);
+        
+        jFrame.add(jPanel);
+        jFrame.setSize(400,400);
+        printreport.setSize(300,350);
+        jFrame.show();
     }//GEN-LAST:event_viewBookingsbtnActionPerformed
 
     private void AccessStudentRecordbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AccessStudentRecordbtnActionPerformed
