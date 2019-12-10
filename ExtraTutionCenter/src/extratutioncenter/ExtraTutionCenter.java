@@ -313,6 +313,7 @@ public class ExtraTutionCenter extends javax.swing.JFrame {
     private void LessonsTaughtHIstorybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LessonsTaughtHIstorybtnActionPerformed
         jLabel3.setVisible(false);
         jLabel6.setVisible(false);
+        jLabel5.setVisible(true);
         studentsdrpdwn.setVisible(false);
         jTextArea1.setVisible(false);
         libraryRecordtable.setVisible(false);
@@ -333,6 +334,39 @@ public class ExtraTutionCenter extends javax.swing.JFrame {
         libraryRecordtable.setVisible(false);
         jLabel5.setVisible(false);
         jLabel6.setVisible(false);
+        
+        System.out.println("\nLessons Bookings Details\n");
+        
+        for(Map.Entry<String,Object> entry : allUserDetails.entrySet()){
+            UserData obj = (UserData)entry.getValue();
+            if(obj.getBooking() != null){
+                for(Booking b : obj.getBooking()){
+                    System.out.println(obj.getName()+"-"+b.getTutor()+"-"+b.getSubject()+"-"+b.getStatus());
+                 }
+            }
+        }
+        
+        String historyreport="Booked = "+getStatsofBookings().get("Booked")+" \nAttended = "+getStatsofBookings().get("Attended")+" \nMissed = "+getStatsofBookings().get("Missed")+" \nCancelled = "+getStatsofBookings().get("Cancelled");
+        System.out.println("\nTotal Lessons Bookings made \n"+ historyreport+"\n");
+        
+        System.out.println("\n\nBooks Ordered Details\n");
+        for(Map.Entry<String,Object> entry : allUserDetails.entrySet()){
+            UserData obj = (UserData)entry.getValue();
+            if(obj.getBookBooked()!= null){
+                for(BooksBooked b : obj.getBookBooked()){
+                    System.out.println(obj.getName()+"-"+b.getSubject()+"-"+b.getQuantity());
+                 }
+            }
+        }
+        
+        System.out.println("\n\nTotal Books available in the store report\n");
+        CGPBookStore.subjectMap.entrySet().forEach(entry->{
+                System.out.println(entry.getKey() + " = " + entry.getValue());  
+            });
+        
+        System.out.println("\n");
+        
+
     }//GEN-LAST:event_printReportbtnActionPerformed
 
     private Map<String,Integer> getStatsofBookings(){
