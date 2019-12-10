@@ -600,7 +600,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
 
     private void OrderBooksbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrderBooksbtnActionPerformed
         // TODO add your handling code here:
-        System.out.print(username);
+        //System.out.print(username);
         CGPBookStore BS= new CGPBookStore(username);
         BS.setVisible(true);
     }//GEN-LAST:event_OrderBooksbtnActionPerformed
