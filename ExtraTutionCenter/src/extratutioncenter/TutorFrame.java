@@ -31,7 +31,7 @@ public class TutorFrame extends javax.swing.JFrame {
         jComboBox1.setVisible(false);
         jCheckBox1.setVisible(false);
         jTextArea1.setVisible(false);
-        jButton5.setVisible(false);
+        Submitbtn.setVisible(false);
         jTable1.setVisible(false);
         jTextArea2.setVisible(false);
         jComboBox2.setVisible(false);
@@ -52,15 +52,15 @@ public class TutorFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        viewBookingsbtn = new javax.swing.JButton();
+        AccessStudentRecordbtn = new javax.swing.JButton();
+        ManageBookingsbtn = new javax.swing.JButton();
+        Logoutbtn = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
         jCheckBox1 = new javax.swing.JCheckBox();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jButton5 = new javax.swing.JButton();
+        Submitbtn = new javax.swing.JButton();
         jComboBox2 = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -78,31 +78,31 @@ public class TutorFrame extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("Tutor Portal");
 
-        jButton1.setText("View Bookings");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        viewBookingsbtn.setText("View Bookings");
+        viewBookingsbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                viewBookingsbtnActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Access Student Record");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        AccessStudentRecordbtn.setText("Access Student Record");
+        AccessStudentRecordbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                AccessStudentRecordbtnActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Manage Bookings");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        ManageBookingsbtn.setText("Manage Bookings");
+        ManageBookingsbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                ManageBookingsbtnActionPerformed(evt);
             }
         });
 
-        jButton4.setText("LogOut");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        Logoutbtn.setText("LogOut");
+        Logoutbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                LogoutbtnActionPerformed(evt);
             }
         });
 
@@ -126,10 +126,10 @@ public class TutorFrame extends javax.swing.JFrame {
         jTextArea1.setBorder(null);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jButton5.setText("Submit");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        Submitbtn.setText("Submit");
+        Submitbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                SubmitbtnActionPerformed(evt);
             }
         });
 
@@ -198,9 +198,9 @@ public class TutorFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(95, 95, 95)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(viewBookingsbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(AccessStudentRecordbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ManageBookingsbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(92, 92, 92)
@@ -214,7 +214,7 @@ public class TutorFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jButton4))
+                                .addComponent(Logoutbtn))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -228,7 +228,7 @@ public class TutorFrame extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton5))
+                                        .addComponent(Submitbtn))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(37, 37, 37)
@@ -243,14 +243,14 @@ public class TutorFrame extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(viewBookingsbtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton2)
+                            .addComponent(AccessStudentRecordbtn)
                             .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton3)
+                            .addComponent(ManageBookingsbtn)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
@@ -266,7 +266,7 @@ public class TutorFrame extends javax.swing.JFrame {
                                         .addComponent(jCheckBox1))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(101, 101, 101)
-                                .addComponent(jButton5)))
+                                .addComponent(Submitbtn)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -278,24 +278,24 @@ public class TutorFrame extends javax.swing.JFrame {
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
-                                .addComponent(jButton4)
+                                .addComponent(Logoutbtn)
                                 .addGap(179, 179, 179))))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void LogoutbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogoutbtnActionPerformed
         // TODO add your handling code here:
         MainPage mainPage = new MainPage();
         mainPage.setVisible(true);
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_LogoutbtnActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void ManageBookingsbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManageBookingsbtnActionPerformed
         // TODO add your handling code here:        
         jCheckBox1.setVisible(false);
         jTextArea1.setVisible(false);
-        jButton5.setVisible(false);
+        Submitbtn.setVisible(false);
         jTable1.setVisible(false);
         jComboBox2.setVisible(false);
         jComboBox1.setVisible(true);
@@ -306,7 +306,7 @@ public class TutorFrame extends javax.swing.JFrame {
         {
             jComboBox1.addItem(key);
         }
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_ManageBookingsbtnActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
@@ -314,13 +314,13 @@ public class TutorFrame extends javax.swing.JFrame {
         {
             jComboBox3.setVisible(true);;
             jTextArea1.setVisible(true);
-            jButton5.setVisible(true);
+            Submitbtn.setVisible(true);
         }
         else
         {
             jComboBox3.setVisible(false);;
             jTextArea1.setVisible(false);
-            jButton5.setVisible(false);
+            Submitbtn.setVisible(false);
         }
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
@@ -357,24 +357,24 @@ public class TutorFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void viewBookingsbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewBookingsbtnActionPerformed
         // TODO add your handling code here:
         //initComponents();
         jComboBox1.setVisible(false);
         jCheckBox1.setVisible(false);
         jTextArea1.setVisible(false);
-        jButton5.setVisible(false);
+        Submitbtn.setVisible(false);
         jTable1.setVisible(false);
         jComboBox2.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_viewBookingsbtnActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void AccessStudentRecordbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AccessStudentRecordbtnActionPerformed
         // TODO add your handling code here:
         //initComponents();
         jComboBox1.setVisible(false);
         jCheckBox1.setVisible(false);
         jTextArea1.setVisible(false);
-        jButton5.setVisible(false);
+        Submitbtn.setVisible(false);
         jTable1.setVisible(true);
         jComboBox2.setVisible(true);    
 //        DefaultComboBoxModel model=(DefaultComboBoxModel) jComboBox2.getModel();
@@ -384,7 +384,7 @@ public class TutorFrame extends javax.swing.JFrame {
         {
             jComboBox2.addItem(key);
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_AccessStudentRecordbtnActionPerformed
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         jComboBox4.setVisible(false);
@@ -418,7 +418,7 @@ public class TutorFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jComboBox2ActionPerformed
 //    Map<String,Object> allUserDetails = UD.getProfile();
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void SubmitbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitbtnActionPerformed
         String student=jComboBox1.getSelectedItem().toString();
         UserData user = (UserData) allUserDetails.get(student);
         List<Booking> bookings = user.getBooking();
@@ -438,7 +438,7 @@ public class TutorFrame extends javax.swing.JFrame {
                     jCheckBox1.setSelected(false);
                     jComboBox3.setVisible(false);
                     jCheckBox1.setVisible(false);
-                    jButton5.setVisible(false);
+                    Submitbtn.setVisible(false);
                     jTextArea1.setVisible(false);
                     jTextArea1.setText("");         
 //                    jComboBox4.setVisible(false);
@@ -454,7 +454,7 @@ public class TutorFrame extends javax.swing.JFrame {
 //            }
         }
 //                  
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_SubmitbtnActionPerformed
 
     private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
         // TODO add your handling code here:
@@ -520,11 +520,10 @@ public class TutorFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton AccessStudentRecordbtn;
+    private javax.swing.JButton Logoutbtn;
+    private javax.swing.JButton ManageBookingsbtn;
+    private javax.swing.JButton Submitbtn;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
@@ -538,5 +537,6 @@ public class TutorFrame extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JButton viewBookingsbtn;
     // End of variables declaration//GEN-END:variables
 }

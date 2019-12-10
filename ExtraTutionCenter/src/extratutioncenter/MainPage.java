@@ -41,8 +41,8 @@ public class MainPage extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        Loginbtn = new javax.swing.JButton();
+        usertypecombobox = new javax.swing.JComboBox<>();
         jUserName1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -58,17 +58,17 @@ public class MainPage extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("ExtraTutionCentre");
 
-        jButton4.setText("Login");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        Loginbtn.setText("Login");
+        Loginbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                LoginbtnActionPerformed(evt);
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "Tutor", "Student" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        usertypecombobox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "Tutor", "Student" }));
+        usertypecombobox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                usertypecomboboxActionPerformed(evt);
             }
         });
 
@@ -105,8 +105,8 @@ public class MainPage extends javax.swing.JFrame {
                             .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE))
                         .addGap(106, 106, 106)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4))
+                    .addComponent(usertypecombobox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Loginbtn))
                 .addGap(88, 88, 88))
         );
         jPanel1Layout.setVerticalGroup(
@@ -115,7 +115,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(usertypecombobox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(63, 63, 63)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jUserName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -124,7 +124,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4))
+                    .addComponent(Loginbtn))
                 .addContainerGap(196, Short.MAX_VALUE))
         );
 
@@ -148,11 +148,11 @@ public class MainPage extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void LoginbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginbtnActionPerformed
         // TODO add your handling code here:
         
         
-        if(jComboBox1.getSelectedIndex()==0)
+        if(usertypecombobox.getSelectedIndex()==0)
         {
             jPanel1.setVisible(false);
             if(jUserName1.getText().equalsIgnoreCase("Admin") && jPasswordField1.getText().equalsIgnoreCase("Admin")){
@@ -169,7 +169,7 @@ public class MainPage extends javax.swing.JFrame {
             
             
             
-        }else if(jComboBox1.getSelectedIndex()==1)
+        }else if(usertypecombobox.getSelectedIndex()==1)
         {
             jPanel1.setVisible(false);
             if(jUserName1.getText().equalsIgnoreCase("Tutor") && jPasswordField1.getText().equalsIgnoreCase("Tutor")){
@@ -184,7 +184,7 @@ public class MainPage extends javax.swing.JFrame {
                 mp.setVisible(true);
             }
             
-        }if(jComboBox1.getSelectedIndex()==2)
+        }if(usertypecombobox.getSelectedIndex()==2)
         {
             jPanel1.setVisible(false);
             if(jPasswordField1.getText().equals(ud.getLogin().get(jUserName1.getText()))){
@@ -201,15 +201,15 @@ public class MainPage extends javax.swing.JFrame {
             }
             
         }
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_LoginbtnActionPerformed
 
     private void jUserName1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jUserName1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jUserName1ActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void usertypecomboboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usertypecomboboxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_usertypecomboboxActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent eve){
         jPanel1.setVisible(true);
@@ -259,13 +259,13 @@ public class MainPage extends javax.swing.JFrame {
     //private javax.swing.JLabel jLabel4;
     //private javax.swing.JButton jButton5;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton4;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JButton Loginbtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jUserName1;
+    private javax.swing.JComboBox<String> usertypecombobox;
     // End of variables declaration//GEN-END:variables
 }

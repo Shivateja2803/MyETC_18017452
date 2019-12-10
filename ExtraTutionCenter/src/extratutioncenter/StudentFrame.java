@@ -97,18 +97,18 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
     @SuppressWarnings("unchecked")
     private void newCOmp()
     {
-        jComboBox1.setVisible(false);
-        jButton6.setVisible(false);
+        TutorDrpDwn.setVisible(false);
+        bookSessonbtn.setVisible(false);
         jLabel3.setVisible(false);
         jLabel4.setVisible(false);
-        jList1.setVisible(false);
+        subjectsList.setVisible(false);
         jLabel5.setVisible(false);
         jLabel6.setVisible(false);
-        jList1.setModel(new DefaultListModel());
-        jTable1.setVisible(false);
-        jComboBox2.setVisible(false);
-        jComboBox3.setVisible(false);
-        jButton8.setVisible(false);
+        subjectsList.setModel(new DefaultListModel());
+        BookingsTable.setVisible(false);
+        tutordrpdown.setVisible(false);
+        subjectdrpdwn.setVisible(false);
+        Cancellbtn.setVisible(false);
     }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -118,22 +118,22 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
         BookLessonsbtn = new javax.swing.JButton();
         viewBookingsbtn = new javax.swing.JButton();
         ModifySlotbtn = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        Logoutbtn = new javax.swing.JButton();
+        TutorDrpDwn = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        subjectsList = new javax.swing.JList<>();
         jLabel2 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        bookSessonbtn = new javax.swing.JButton();
         OrderBooksbtn = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jButton8 = new javax.swing.JButton();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        BookingsTable = new javax.swing.JTable();
+        tutordrpdown = new javax.swing.JComboBox<>();
+        Cancellbtn = new javax.swing.JButton();
+        subjectdrpdwn = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(500, 300));
@@ -171,38 +171,38 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
             }
         });
 
-        jButton5.setText("LogOut");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        Logoutbtn.setText("LogOut");
+        Logoutbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                LogoutbtnActionPerformed(evt);
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<Select>", "Tutor1", "Tutor2", "Tutor3", "Tutor4", "Tutor5", " " }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        TutorDrpDwn.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<Select>", "Tutor1", "Tutor2", "Tutor3", "Tutor4", "Tutor5" }));
+        TutorDrpDwn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                TutorDrpDwnActionPerformed(evt);
             }
         });
 
         jScrollPane1.setEnabled(false);
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        subjectsList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "English Comprehension", "English Writing", "Maths", "Numerical Reasoning", "Verbal Reasoning", "Non-Verbal Reasoning", "Subject7", "Subject8", "Subject9", "Subject10" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jList1.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+        subjectsList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
-                jList1ValueChanged(evt);
+                subjectsListValueChanged(evt);
             }
         });
-        jScrollPane1.setViewportView(jList1);
+        jScrollPane1.setViewportView(subjectsList);
 
-        jButton6.setText("Book");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        bookSessonbtn.setText("Book");
+        bookSessonbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                bookSessonbtnActionPerformed(evt);
             }
         });
 
@@ -223,7 +223,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel6.setText("Select Subject");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        BookingsTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -246,24 +246,24 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane2.setViewportView(jTable1);
+        jScrollPane2.setViewportView(BookingsTable);
 
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        tutordrpdown.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                tutordrpdownActionPerformed(evt);
             }
         });
 
-        jButton8.setText("Cancel");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        Cancellbtn.setText("Cancel");
+        Cancellbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                CancellbtnActionPerformed(evt);
             }
         });
 
-        jComboBox3.addActionListener(new java.awt.event.ActionListener() {
+        subjectdrpdwn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox3ActionPerformed(evt);
+                subjectdrpdwnActionPerformed(evt);
             }
         });
 
@@ -292,22 +292,22 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(32, 32, 32)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jButton5)
+                                    .addComponent(Logoutbtn)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jLabel5)
                                                 .addGap(36, 36, 36)
-                                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(TutorDrpDwn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(41, 41, 41)
                                                 .addComponent(jLabel6))
                                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(tutordrpdown, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(subjectdrpdwn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(38, 38, 38)
-                                                .addComponent(jButton8)))
+                                                .addComponent(Cancellbtn)))
                                         .addGap(46, 46, 46)
                                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -322,7 +322,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                                                 .addGap(0, 0, Short.MAX_VALUE))))
                                     .addGroup(layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton6)
+                                        .addComponent(bookSessonbtn)
                                         .addGap(0, 0, Short.MAX_VALUE))))))))
         );
         layout.setVerticalGroup(
@@ -337,7 +337,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton6))
+                            .addComponent(bookSessonbtn))
                         .addGap(127, 127, 127)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
@@ -348,7 +348,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(BookLessonsbtn)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TutorDrpDwn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5)
                             .addComponent(jLabel6))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -360,33 +360,33 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton8)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Cancellbtn)
+                            .addComponent(tutordrpdown, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(ModifySlotbtn)
-                                .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(subjectdrpdwn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(37, 37, 37)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(OrderBooksbtn)
-                            .addComponent(jButton5))
+                            .addComponent(Logoutbtn))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void LogoutbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogoutbtnActionPerformed
         // TODO add your handling code here:        
         MainPage mainPage = new MainPage();
         mainPage.setVisible(true);
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_LogoutbtnActionPerformed
 
     Map<String,Object> allUserDetails = ud.getProfile();
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void bookSessonbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bookSessonbtnActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null,"Your booking for "+jComboBox1.getSelectedItem().toString()+","+jList1.getSelectedValue()+" is successful");
+        JOptionPane.showMessageDialog(null,"Your booking for "+TutorDrpDwn.getSelectedItem().toString()+","+subjectsList.getSelectedValue()+" is successful");
         //bookingsCount++;
         ud.setSessionsBooked(ud.getSessionsBooked()+1);
         //counter.setBookingCounter(bookingsCount);
@@ -395,7 +395,7 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
         LocalDateTime myDateObj = LocalDateTime.now();
         DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         String timeslot = myDateObj.format(myFormatObj); 
-        Booking b1= new Booking(jComboBox1.getSelectedItem().toString(),jList1.getSelectedValue(),timeslot,"Booked");
+        Booking b1= new Booking(TutorDrpDwn.getSelectedItem().toString(),subjectsList.getSelectedValue(),timeslot,"Booked");
         UserData userdata=(UserData)allUserDetails.get(user);
         List<Booking> bookings = userdata.getBooking();
         if(bookings == null){
@@ -404,128 +404,128 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
         bookings.add(b1);
         userdata.setBooking(bookings);
         
-        jLabel4.setText(jComboBox1.getSelectedItem().toString());
-        if(jList1.getSelectedValue().equalsIgnoreCase("English Comprehension")){
+        jLabel4.setText(TutorDrpDwn.getSelectedItem().toString());
+        if(subjectsList.getSelectedValue().equalsIgnoreCase("English Comprehension")){
             engCompCount--;
             ud.setSessionsBooked(ud.getSessionsBooked()+1);
-            jLabel3.setText("Available slots for "+jList1.getSelectedValue()+" are "+engCompCount);
-            System.out.println("Available slots for "+jList1.getSelectedValue()+" are "+engCompCount);
+            jLabel3.setText("Available slots for "+subjectsList.getSelectedValue()+" are "+engCompCount);
+            System.out.println("Available slots for "+subjectsList.getSelectedValue()+" are "+engCompCount);
             //System.out.print(engCompCount);
-        }else if(jList1.getSelectedValue().equalsIgnoreCase("English Writing")){
+        }else if(subjectsList.getSelectedValue().equalsIgnoreCase("English Writing")){
             engWritingCount--;
             ud.setSessionsBooked(ud.getSessionsBooked()+1);
-            jLabel3.setText("Available slots for "+jList1.getSelectedValue()+" are "+engWritingCount);
-            System.out.println("Available slots for "+jList1.getSelectedValue()+" are "+engWritingCount);
-        }else if(jList1.getSelectedValue().equalsIgnoreCase("Maths")){
+            jLabel3.setText("Available slots for "+subjectsList.getSelectedValue()+" are "+engWritingCount);
+            System.out.println("Available slots for "+subjectsList.getSelectedValue()+" are "+engWritingCount);
+        }else if(subjectsList.getSelectedValue().equalsIgnoreCase("Maths")){
             mathCount--;
             ud.setSessionsBooked(ud.getSessionsBooked()+1);
-            jLabel3.setText("Available slots for "+jList1.getSelectedValue()+" are "+mathCount);
-            System.out.println("Available slots for "+jList1.getSelectedValue()+" are "+mathCount);
-        }else if(jList1.getSelectedValue().equalsIgnoreCase("Numerical Reasoning")){
+            jLabel3.setText("Available slots for "+subjectsList.getSelectedValue()+" are "+mathCount);
+            System.out.println("Available slots for "+subjectsList.getSelectedValue()+" are "+mathCount);
+        }else if(subjectsList.getSelectedValue().equalsIgnoreCase("Numerical Reasoning")){
             numericReasoningCount--;
             ud.setSessionsBooked(ud.getSessionsBooked()+1);
-            jLabel3.setText("Available slots for "+jList1.getSelectedValue()+" are "+numericReasoningCount);
-            System.out.println("Available slots for "+jList1.getSelectedValue()+" are "+numericReasoningCount);
-        }else if(jList1.getSelectedValue().equalsIgnoreCase("verbal Reasoning")){
+            jLabel3.setText("Available slots for "+subjectsList.getSelectedValue()+" are "+numericReasoningCount);
+            System.out.println("Available slots for "+subjectsList.getSelectedValue()+" are "+numericReasoningCount);
+        }else if(subjectsList.getSelectedValue().equalsIgnoreCase("verbal Reasoning")){
             verbalReasoningCount--;
             ud.setSessionsBooked(ud.getSessionsBooked()+1);
-            jLabel3.setText("Available slots for "+jList1.getSelectedValue()+" are "+verbalReasoningCount);
-            System.out.println("Available slots for "+jList1.getSelectedValue()+" are "+verbalReasoningCount);
-        }else if(jList1.getSelectedValue().equalsIgnoreCase("Non-Verbal Reasoning")){
+            jLabel3.setText("Available slots for "+subjectsList.getSelectedValue()+" are "+verbalReasoningCount);
+            System.out.println("Available slots for "+subjectsList.getSelectedValue()+" are "+verbalReasoningCount);
+        }else if(subjectsList.getSelectedValue().equalsIgnoreCase("Non-Verbal Reasoning")){
             nonVerbalReasoningCount--;
             ud.setSessionsBooked(ud.getSessionsBooked()+1);
-            jLabel3.setText("Available slots for "+jList1.getSelectedValue()+" are "+nonVerbalReasoningCount);
-            System.out.println("Available slots for "+jList1.getSelectedValue()+" are "+nonVerbalReasoningCount);
+            jLabel3.setText("Available slots for "+subjectsList.getSelectedValue()+" are "+nonVerbalReasoningCount);
+            System.out.println("Available slots for "+subjectsList.getSelectedValue()+" are "+nonVerbalReasoningCount);
         }
-        String tutor1=jComboBox1.getSelectedItem().toString();
-        String subject1=jList1.getSelectedValue();
+        String tutor1=TutorDrpDwn.getSelectedItem().toString();
+        String subject1=subjectsList.getSelectedValue();
         System.out.println("Booking with "+tutor1+" for  "+subject1+" is Booked at "+timeslot+" Successfully");
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_bookSessonbtnActionPerformed
 
     private void BookLessonsbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BookLessonsbtnActionPerformed
         // TODO add your handling code here:
-        jComboBox1.setVisible(true);
+        TutorDrpDwn.setVisible(true);
         jLabel5.setVisible(true);
-        jComboBox2.setVisible(false);
-        jComboBox3.setVisible(false);
+        tutordrpdown.setVisible(false);
+        subjectdrpdwn.setVisible(false);
          
         //making jlist visible on click of view bookings
-        jList1.setVisible(false);
+        subjectsList.setVisible(false);
         
             //showing only tutor1 list values at beginning as it is by default selected
             DefaultListModel defaultListModel = new DefaultListModel();
             defaultListModel.addElement("English Comprehension");
             defaultListModel.addElement("English Writing");
             defaultListModel.addElement("Maths");
-            jList1.setModel(defaultListModel);
+            subjectsList.setModel(defaultListModel);
     }//GEN-LAST:event_BookLessonsbtnActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void TutorDrpDwnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TutorDrpDwnActionPerformed
         // TODO add your handling code here:
 
         DefaultListModel defaultListModel = new DefaultListModel();
-    switch (jComboBox1.getSelectedIndex()) {
+    switch (TutorDrpDwn.getSelectedIndex()) {
         case 0:
             jLabel3.setVisible(false);
             jLabel6.setVisible(false);
-            jList1.setVisible(false);
-            jButton6.setVisible(false);
+            subjectsList.setVisible(false);
+            bookSessonbtn.setVisible(false);
             break;
         case 1:
             defaultListModel.addElement("English Comprehension");
             defaultListModel.addElement("English Writing");
             defaultListModel.addElement("Maths");
-            jList1.setModel(defaultListModel);
+            subjectsList.setModel(defaultListModel);
             jLabel6.setVisible(true);
-            jList1.setVisible(true);
-            jButton6.setVisible(true);
+            subjectsList.setVisible(true);
+            bookSessonbtn.setVisible(true);
             break;
         case 2:
             defaultListModel.addElement("Numerical Reasoning");
             defaultListModel.addElement("Verbal Reasoning");
             defaultListModel.addElement("Non-Verbal Reasoning");
-            jList1.setModel(defaultListModel);
+            subjectsList.setModel(defaultListModel);
             jLabel6.setVisible(true);
-            jList1.setVisible(true);
-            jButton6.setVisible(true);
+            subjectsList.setVisible(true);
+            bookSessonbtn.setVisible(true);
             break;
         case 3:
             defaultListModel.addElement("Maths");
             defaultListModel.addElement("English Comprehension");
             defaultListModel.addElement("Non-Verbal Reasoning");
-            jList1.setModel(defaultListModel);
+            subjectsList.setModel(defaultListModel);
             jLabel6.setVisible(true);
-            jList1.setVisible(true);
-            jButton6.setVisible(true);
+            subjectsList.setVisible(true);
+            bookSessonbtn.setVisible(true);
             break;
         case 4:
             defaultListModel.addElement("English Writing");
             defaultListModel.addElement("Verbal Reasoning");
             defaultListModel.addElement("Maths");
-            jList1.setModel(defaultListModel);
+            subjectsList.setModel(defaultListModel);
             jLabel6.setVisible(true);
-            jList1.setVisible(true);
-            jButton6.setVisible(true);
+            subjectsList.setVisible(true);
+            bookSessonbtn.setVisible(true);
             break;
         case 5:
             defaultListModel.addElement("English Comprehension");
             defaultListModel.addElement("Numerical Reasoning");
             defaultListModel.addElement("English Writing");
-            jList1.setModel(defaultListModel);
+            subjectsList.setModel(defaultListModel);
             jLabel6.setVisible(true);
-            jList1.setVisible(true);
-            jButton6.setVisible(true);
+            subjectsList.setVisible(true);
+            bookSessonbtn.setVisible(true);
             break;
         default:
             break;
     }
         
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_TutorDrpDwnActionPerformed
 
     private void viewProfilebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewProfilebtnActionPerformed
         // TODO add your handling code here:
-        jList1.setVisible(false);
-        jComboBox1.setVisible(false);
+        subjectsList.setVisible(false);
+        TutorDrpDwn.setVisible(false);
         jLabel3.setVisible(false);
         String user=getUsername();
 //        System.out.println(name);
@@ -555,10 +555,10 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
        
     }//GEN-LAST:event_viewProfilebtnActionPerformed
 
-    private void jList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList1ValueChanged
+    private void subjectsListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_subjectsListValueChanged
         // TODO add your handling code here:
         jLabel3.setVisible(false);
-        jButton6.setVisible(false);
+        bookSessonbtn.setVisible(false);
         if(!evt.getValueIsAdjusting()){
             JList source = (JList) evt.getSource();
             
@@ -567,36 +567,36 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                 jLabel3.setVisible(true);
                 jLabel3.setText("Available slots for "+source.getSelectedValue().toString()+" are "+engCompCount);
 //                System.out.println(source.getSelectedValue().toString());
-                jButton6.setVisible(true);
+                bookSessonbtn.setVisible(true);
             }else if(source.getSelectedValue()!=null && source.getSelectedValue().toString().equalsIgnoreCase("English Writing")){
                 jLabel3.setVisible(true);
                 jLabel3.setText("Available slots for "+source.getSelectedValue().toString()+" are "+engWritingCount);
 //                System.out.println(source.getSelectedValue().toString());
-                jButton6.setVisible(true);
+                bookSessonbtn.setVisible(true);
             }else if(source.getSelectedValue()!=null && source.getSelectedValue().toString().equalsIgnoreCase("Maths")){
                 jLabel3.setVisible(true);
                 jLabel3.setText("Available slots for "+source.getSelectedValue().toString()+" are "+mathCount);
 //                System.out.println(source.getSelectedValue().toString());
-                jButton6.setVisible(true);
+                bookSessonbtn.setVisible(true);
             }else if(source.getSelectedValue()!=null && source.getSelectedValue().toString().equalsIgnoreCase("Numerical Reasoning")){
                 jLabel3.setVisible(true);
                 jLabel3.setText("Available slots for "+source.getSelectedValue().toString()+" are "+numericReasoningCount);
 //                System.out.println(source.getSelectedValue().toString());
-                jButton6.setVisible(true);
+                bookSessonbtn.setVisible(true);
             }else if(source.getSelectedValue()!=null && source.getSelectedValue().toString().equalsIgnoreCase("Verbal Reasoning")){
                 jLabel3.setVisible(true);
                 jLabel3.setText("Available slots for "+source.getSelectedValue().toString()+" are "+verbalReasoningCount);
 //                System.out.println(source.getSelectedValue().toString());
-                jButton6.setVisible(true);
+                bookSessonbtn.setVisible(true);
             }else if(source.getSelectedValue()!=null && source.getSelectedValue()!=null && source.getSelectedValue().toString().equalsIgnoreCase("Non-Verbal Reasoning")){
                 jLabel3.setVisible(true);
                 jLabel3.setText("Available slots for "+source.getSelectedValue().toString()+" are "+nonVerbalReasoningCount);
 //                System.out.println(source.getSelectedValue().toString());
-                jButton6.setVisible(true);
+                bookSessonbtn.setVisible(true);
             }
          }
         }        
-    }//GEN-LAST:event_jList1ValueChanged
+    }//GEN-LAST:event_subjectsListValueChanged
 
     private void OrderBooksbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrderBooksbtnActionPerformed
         // TODO add your handling code here:
@@ -611,8 +611,8 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
         String user=getUsername();
         UserData userdata=(UserData)allUserDetails.get(user);
         List<Booking> bookings = userdata.getBooking();
-        jTable1.setVisible(true);
-        DefaultTableModel model1= (DefaultTableModel) jTable1.getModel();
+        BookingsTable.setVisible(true);
+        DefaultTableModel model1= (DefaultTableModel) BookingsTable.getModel();
         model1.setRowCount(0);
         Object rowData[]=new Object[4];
         if(bookings != null){
@@ -628,11 +628,11 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
 
     private void ModifySlotbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ModifySlotbtnActionPerformed
         // TODO add your handling code here:
-        jTable1.setVisible(false);      
+        BookingsTable.setVisible(false);      
         jLabel6.setVisible(false);
-        jList1.setVisible(false);
-        jButton6.setVisible(false);
-        DefaultComboBoxModel model=(DefaultComboBoxModel) jComboBox2.getModel();
+        subjectsList.setVisible(false);
+        bookSessonbtn.setVisible(false);
+        DefaultComboBoxModel model=(DefaultComboBoxModel) tutordrpdown.getModel();
         //model.removeAllElements();        
         String user=getUsername();
         UserData userdata=(UserData)allUserDetails.get(user);
@@ -640,40 +640,40 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
         if(b!=null){
             for(int i=0;i<b.size();i++){
                 if((b.get(i).Status.equals("Booked"))){
-                    jComboBox2.addItem((b.get(i).tutor));
-                    jComboBox2.setVisible(true);
+                    tutordrpdown.addItem((b.get(i).tutor));
+                    tutordrpdown.setVisible(true);
                 }
                 
             }
         }
     }//GEN-LAST:event_ModifySlotbtnActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void tutordrpdownActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tutordrpdownActionPerformed
         // TODO add your handling code here:
                 // TODO add your handling code here:              
-        DefaultComboBoxModel model=(DefaultComboBoxModel) jComboBox3.getModel();
+        DefaultComboBoxModel model=(DefaultComboBoxModel) subjectdrpdwn.getModel();
         model.removeAllElements();
         String user=getUsername();
         UserData userdata=(UserData)allUserDetails.get(user);
         List<Booking> b=userdata.getBooking();
         if(b!=null){
             for(int i=0;i<b.size();i++){
-                if(b.get(i).Status.equals("Booked")&&b.get(i).tutor.equals(jComboBox2.getSelectedItem().toString()))
-                jComboBox3.addItem(b.get(i).subject);
+                if(b.get(i).Status.equals("Booked")&&b.get(i).tutor.equals(tutordrpdown.getSelectedItem().toString()))
+                subjectdrpdwn.addItem(b.get(i).subject);
             }
-            jComboBox3.setVisible(true);  
+            subjectdrpdwn.setVisible(true);  
         }
         else
-            jButton8.setVisible(false);
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+            Cancellbtn.setVisible(false);
+    }//GEN-LAST:event_tutordrpdownActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void CancellbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancellbtnActionPerformed
         // TODO add your handling code here:
         String student=getUsername();
         UserData user = (UserData) allUserDetails.get(student);
         List<Booking> bookings = user.getBooking();
         
-        TableModel model = jTable1.getModel();
+        TableModel model = BookingsTable.getModel();
         for (int i = 0; i < model.getRowCount(); i++) {   
             //System.out.println(model.getRowCount());
             if (model.getValueAt(i, 0) == null) {
@@ -682,29 +682,29 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
             else
             {
                 //System.out.println("Tutor Name is :" + model.getValueAt(i, 0));
-                if(model.getValueAt(i,0)!=null && model.getValueAt(i, 0).equals(jComboBox2.getSelectedItem().toString())){
-                    if(model.getValueAt(i, 1).equals(jComboBox3.getSelectedItem().toString()))
+                if(model.getValueAt(i,0)!=null && model.getValueAt(i, 0).equals(tutordrpdown.getSelectedItem().toString())){
+                    if(model.getValueAt(i, 1).equals(subjectdrpdwn.getSelectedItem().toString()))
                     {
                         bookings.get(i).setStatus("Cancelled");   
 //                        ud.setCancelled(ud.getCancelled()+1);
 //                        setCancelled(getCancelled()+1);
-                        if(jComboBox3.getSelectedItem().equals("English Comprehension"))
+                        if(subjectdrpdwn.getSelectedItem().equals("English Comprehension"))
                             engCompCount++;
-                        else if(jComboBox3.getSelectedItem().equals("English Writing"))
+                        else if(subjectdrpdwn.getSelectedItem().equals("English Writing"))
                             engWritingCount++;
-                        else if(jComboBox3.getSelectedItem().equals("Maths"))
+                        else if(subjectdrpdwn.getSelectedItem().equals("Maths"))
                             mathCount++;
-                        else if(jComboBox3.getSelectedItem().equals("Non-Verbal Reasoning"))
+                        else if(subjectdrpdwn.getSelectedItem().equals("Non-Verbal Reasoning"))
                             nonVerbalReasoningCount++;
-                        else if(jComboBox3.getSelectedItem().equals("Verbal Reasoning"))
+                        else if(subjectdrpdwn.getSelectedItem().equals("Verbal Reasoning"))
                             verbalReasoningCount++;
-                        else if(jComboBox3.getSelectedItem().equals("Numerical Reasoning"))
+                        else if(subjectdrpdwn.getSelectedItem().equals("Numerical Reasoning"))
                             numericReasoningCount++;
-                        JOptionPane.showMessageDialog(null,"Your booking with "+jComboBox2.getSelectedItem()+" and subject "+jComboBox3.getSelectedItem()+" is Cancelled");    
-                        System.out.println("Your booking with "+jComboBox2.getSelectedItem()+" and subject "+jComboBox3.getSelectedItem()+" is Cancelled");
-                        jComboBox2.removeItem(model.getValueAt(i, 0));
-                        jComboBox3.removeItem(model.getValueAt(i, 1));
-                        jButton8.setVisible(false);
+                        JOptionPane.showMessageDialog(null,"Your booking with "+tutordrpdown.getSelectedItem()+" and subject "+subjectdrpdwn.getSelectedItem()+" is Cancelled");    
+                        System.out.println("Your booking with "+tutordrpdown.getSelectedItem()+" and subject "+subjectdrpdwn.getSelectedItem()+" is Cancelled");
+                        tutordrpdown.removeItem(model.getValueAt(i, 0));
+                        subjectdrpdwn.removeItem(model.getValueAt(i, 1));
+                        Cancellbtn.setVisible(false);
 //                        cancelCount++;
 //                        counter.setCancelCounter(cancelCount);
 //                        System.out.println("cancel count is"+cancelCount);
@@ -712,12 +712,12 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
                 }
             }
         }
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_CancellbtnActionPerformed
 
-    private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
+    private void subjectdrpdwnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectdrpdwnActionPerformed
         // TODO add your handling code here:
-        jButton8.setVisible(true);
-    }//GEN-LAST:event_jComboBox3ActionPerformed
+        Cancellbtn.setVisible(true);
+    }//GEN-LAST:event_subjectdrpdwnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -756,24 +756,24 @@ public static int engCompCount = 10,engWritingCount=10,mathCount = 10,numericRea
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BookLessonsbtn;
+    private javax.swing.JTable BookingsTable;
+    private javax.swing.JButton Cancellbtn;
+    private javax.swing.JButton Logoutbtn;
     private javax.swing.JButton ModifySlotbtn;
     private javax.swing.JButton OrderBooksbtn;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> TutorDrpDwn;
+    private javax.swing.JButton bookSessonbtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JComboBox<String> subjectdrpdwn;
+    private javax.swing.JList<String> subjectsList;
+    private javax.swing.JComboBox<String> tutordrpdown;
     private javax.swing.JButton viewBookingsbtn;
     private javax.swing.JButton viewProfilebtn;
     // End of variables declaration//GEN-END:variables

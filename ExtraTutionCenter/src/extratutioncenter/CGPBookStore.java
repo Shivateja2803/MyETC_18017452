@@ -52,12 +52,12 @@ public class CGPBookStore extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        LogOutbtn = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox<>();
-        jButton2 = new javax.swing.JButton();
+        OrderNowbtn = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -72,10 +72,10 @@ public class CGPBookStore extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("CGP BookStore");
 
-        jButton1.setText("LogOut");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        LogOutbtn.setText("LogOut");
+        LogOutbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                LogOutbtnActionPerformed(evt);
             }
         });
 
@@ -97,10 +97,10 @@ public class CGPBookStore extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("OrderNow");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        OrderNowbtn.setText("OrderNow");
+        OrderNowbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                OrderNowbtnActionPerformed(evt);
             }
         });
 
@@ -130,10 +130,10 @@ public class CGPBookStore extends javax.swing.JFrame {
                                 .addGap(62, 62, 62)
                                 .addComponent(jLabel5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 266, Short.MAX_VALUE)
-                                .addComponent(jButton2))))
+                                .addComponent(OrderNowbtn))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)))
+                        .addComponent(LogOutbtn)))
                 .addGap(334, 334, 334))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -162,12 +162,12 @@ public class CGPBookStore extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2)
+                    .addComponent(OrderNowbtn)
                     .addComponent(jLabel5))
                 .addGap(63, 63, 63)
                 .addComponent(jLabel4)
                 .addGap(36, 36, 36)
-                .addComponent(jButton1)
+                .addComponent(LogOutbtn)
                 .addContainerGap(253, Short.MAX_VALUE))
         );
 
@@ -194,16 +194,16 @@ public class CGPBookStore extends javax.swing.JFrame {
     
     
     
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void LogOutbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogOutbtnActionPerformed
         // TODO add your handling code here:
         MainPage mp= new MainPage();
         mp.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_LogOutbtnActionPerformed
     
     
     
     Map<String,Object> allUserDetails = UD.getProfile();
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void OrderNowbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrderNowbtnActionPerformed
         // TODO add your handling code here:
         String text="Subject : "+jComboBox1.getSelectedItem().toString()+" and Books Ordered : "+jComboBox2.getSelectedItem().toString();
         jLabel4.setText(text);
@@ -227,7 +227,7 @@ public class CGPBookStore extends javax.swing.JFrame {
         int subjectPreviousQuantity = subjectMap.get(subjectSelected);
         int newvalue=subjectPreviousQuantity-quantityOrdered;
         subjectMap.put(subjectSelected, newvalue);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_OrderNowbtnActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
@@ -291,8 +291,8 @@ public class CGPBookStore extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton LogOutbtn;
+    private javax.swing.JButton OrderNowbtn;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
