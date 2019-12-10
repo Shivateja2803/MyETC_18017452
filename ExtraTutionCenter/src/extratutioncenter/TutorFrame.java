@@ -347,11 +347,11 @@ public class TutorFrame extends javax.swing.JFrame {
 //                    jComboBox5.setVisible(false);
 //                    jCheckBox1.setVisible(false);
                 }                
-            }
+            }            
         }
         else
         {
-            System.out.println("No Bookings available");
+            System.out.println("No Bookings available for "+jComboBox1.getSelectedItem());
             jComboBox4.setVisible(false);
             jComboBox5.setVisible(false);
         }
@@ -366,6 +366,16 @@ public class TutorFrame extends javax.swing.JFrame {
         Submitbtn.setVisible(false);
         jTable1.setVisible(false);
         jComboBox2.setVisible(false);
+        for(Map.Entry<String,Object> entry : allUserDetails.entrySet()){
+            UserData obj = (UserData)entry.getValue();
+            if(obj.getBooking() != null){
+                for(Booking b : obj.getBooking()){
+                    if(b.getStatus().equals("Booked")){
+                        System.out.println(obj.getName()+"-"+b.getTutor()+"-"+b.getSubject()+"-"+b.getStatus());
+                    }
+                 }
+            }
+        }
     }//GEN-LAST:event_viewBookingsbtnActionPerformed
 
     private void AccessStudentRecordbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AccessStudentRecordbtnActionPerformed
@@ -414,7 +424,7 @@ public class TutorFrame extends javax.swing.JFrame {
         else
         {
             jTable1.setVisible(false);
-            System.out.println("No Bookings available");
+            System.out.println("No Bookings Made by "+jComboBox2.getSelectedItem());
         }
     }//GEN-LAST:event_jComboBox2ActionPerformed
 //    Map<String,Object> allUserDetails = UD.getProfile();
